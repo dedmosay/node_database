@@ -1,4 +1,4 @@
-### Разница между MySQL и PostgreSQL 
+
 ### Getting started PostgreSQL
 
 ## 1. Введение
@@ -8,6 +8,7 @@
  
 
 ## 2. Обзор
+### Разница между MySQL и PostgreSQL 
 
 #### Definition of MySQL
 
