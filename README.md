@@ -1,5 +1,5 @@
 
-### Getting started PostgreSQL
+ 
 
 ## 1. Введение
 
