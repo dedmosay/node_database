@@ -1,4 +1,4 @@
-###Разница между MySQL и PostgreSQL
+### Разница между MySQL и PostgreSQL
 
 ## 1. Введение
 
