@@ -80,3 +80,13 @@ PSQL Shell (psql)
 
 Выполните операции установки, используя [UNION](http://www.postgresqltutorial.com/postgresql-union/ "UNION"), [INTERSECT](http://www.postgresqltutorial.com/postgresql-intersect/ "INTERSECT") и [EXCEPT](http://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/  "EXCEPT")
 
+
+
+    \l                          - список баз данных
+    \dt                         - список всех таблиц
+    \d table                    - структура таблицы table
+    SHOW data_directory;        - узнать текущий путь
+    select * from pg_shadow;    - cписок пользователей
+    select * from pg_database;  - cписок баз данных
+    \c databaseName             - подключиться к databaseName
+   
