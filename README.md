@@ -4,7 +4,7 @@
 
 Данное руководство построено на примере Tech Differences
 (https://techdifferences.com/difference-between-mysql-and-postgresql.html).
-Данный метод работы позволяет быстро начать работу 
+ 
 
 ## 2. Обзор
 
