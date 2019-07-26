@@ -1,9 +1,10 @@
-### Разница между MySQL и PostgreSQL
+### Разница между MySQL и PostgreSQL 
+### Getting started PostgreSQL
 
 ## 1. Введение
 
-Данное руководство построено на примере Tech Differences
-(https://techdifferences.com/difference-between-mysql-and-postgresql.html).
+Данное руководство построено на примере
+[Tech Differences](https://techdifferences.com/difference-between-mysql-and-postgresql.html "Tech Differences"), [Node Postgres ](https://node-postgres.com/ "Node Postgres ") и [Get started postgresqltutorial](http://www.postgresqltutorial.com/postgresql-select/ "Get started postgresqltutorial")
  
 
 ## 2. Обзор
@@ -44,4 +45,37 @@ PostgreSQL использует инструмент pgAdmin для обеспе
 
 PostgresSQL предлагает возможность онлайн резервного копирования. Он предоставляет временные таблицы, а также материализованное представление. и это также обеспечивает объект предметной области.
 
+## 3. Создание и подключение базы данных
+### PostgreSQL Tutorial 
+
+PSQL Shell (psql)
+1. Введите информацию об учетной записи для входа на сервер базы данных PostgreSQL. Вы можете использовать значение по умолчанию, предоставляемое psql, нажав клавишу Enter.
+
+       Server [localhost]:
+       Database [postgres]:
+       Port [5432]:
+       Username [postgres]:
+       Password for user postgres:
+
+2. Введите следующую инструкцию CREATE DATABASE, чтобы создать новую базу данных admindb.
+
+       CREATE DATABASE admindb;
+
+
+Выделите отдельные строки с помощью оператора [DISTINCT](http://www.postgresqltutorial.com/postgresql-select-distinct/ "DISTINCT")
+
+Сортировать строки с помощью предложения [ORDER BY](http://www.postgresqltutorial.com/postgresql-order-by/ "ORDER BY")
+ 
+Фильтрация строк с использованием предложения [WHERE](http://www.postgresqltutorial.com/postgresql-where/ "WHERE")
+
+Выберите подмножество строк в таблице, используя предложение [LIMIT](http://www.postgresqltutorial.com/postgresql-limit/ "LIMIT") и [FETCH](http://www.postgresqltutorial.com/postgresql-fetch/ "FETCH")
+
+
+ Группируйте строки в группы с помощью предложения [GROUP BY](http://www.postgresqltutorial.com/postgresql-order-by/ "GROUP BY")
+ 
+ Фильтруйте группы с помощью предложения [HAVING](http://www.postgresqltutorial.com/postgresql-having/"HAVING")
+  
+ Объединяйте с другими таблицами, используя соединения, такие как [JOINS](http://www.postgresqltutorial.com/postgresql-joins/ "JOINS")  
+
+Выполните операции установки, используя [UNION](http://www.postgresqltutorial.com/postgresql-union/ "UNION"), [INTERSECT](http://www.postgresqltutorial.com/postgresql-intersect/ "INTERSECT") и [EXCEPT](http://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/  "EXCEPT")
 
