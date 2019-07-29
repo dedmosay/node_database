@@ -89,7 +89,7 @@ PSQL Shell (psql)
     select * from pg_shadow;    - cписок пользователей
     select * from pg_database;  - cписок баз данных
     \c databaseName             - подключиться к databaseName
-   ALTER DATABASE template1 RENAME TO todo      - переименовать template1 в todo
+    ALTER DATABASE template1 RENAME TO todo      - переименовать template1 в todo
    
    
    В качестве проверки подключения базы данных к node-server можно использовать следущую запись
