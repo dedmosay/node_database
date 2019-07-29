@@ -110,7 +110,7 @@ PSQL Shell (psql)
   
   
   Создадим базу данных и добавим данные
-```psql
+```sql
     CREATE TABLE users(
       name VARCHAR(20),
       age SMALLINT
@@ -126,7 +126,7 @@ PSQL Shell (psql)
  ```   
 
 Необходимо убедиться в настроке package.json
-```json
+```js
      {
        "name": "psql",
        "version": "1.0.0",
