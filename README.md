@@ -90,11 +90,11 @@ PSQL Shell (psql)
      
 узнать текущий путь: 
 ```sql
-    SHOW data_directory;       
+SHOW data_directory;       
 ```
 cписок пользователей
 ```sql
-    SELECT * FROM pg_shadow;    
+SELECT * FROM pg_shadow;    
 ```
 cписок баз данных
 ```sql
