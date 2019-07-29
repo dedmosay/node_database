@@ -51,17 +51,18 @@ PostgresSQL предлагает возможность онлайн резер�
 
 PSQL Shell (psql)
 1. Введите информацию об учетной записи для входа на сервер базы данных PostgreSQL. Вы можете использовать значение по умолчанию, предоставляемое psql, нажав клавишу Enter.
-
+```sql
        Server [localhost]:
        Database [postgres]:
        Port [5432]:
        Username [postgres]:
        Password for user postgres:
+```
 
 2. Введите следующую инструкцию CREATE DATABASE, чтобы создать новую базу данных admindb.
-
+```sql
        CREATE DATABASE admindb;
-
+```
 
 Выделите отдельные строки с помощью оператора [DISTINCT](http://www.postgresqltutorial.com/postgresql-select-distinct/ "DISTINCT")
 
@@ -81,13 +82,13 @@ PSQL Shell (psql)
 Выполните операции установки, используя [UNION](http://www.postgresqltutorial.com/postgresql-union/ "UNION"), [INTERSECT](http://www.postgresqltutorial.com/postgresql-intersect/ "INTERSECT") и [EXCEPT](http://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/  "EXCEPT")
 
 
-
+    
     \l                          - список баз данных
     \dt                         - список всех таблиц
     \d table                    - структура таблицы table
     SHOW data_directory;        - узнать текущий путь
-    select * from pg_shadow;    - cписок пользователей
-    select * from pg_database;  - cписок баз данных
+    SELECT * FROM pg_shadow;    - cписок пользователей
+    SELECT * FROM pg_database;  - cписок баз данных
     \c databaseName             - подключиться к databaseName
     ALTER DATABASE template1 RENAME TO todo      - переименовать template1 в todo
    
@@ -107,9 +108,10 @@ PSQL Shell (psql)
    ```
   
   Вывод программы DATA: 123
-  
-  
-  Создадим базу данных и добавим данные
+
+## Начало работы
+
+ 1. Создадим базу данных и добавим данные
 ```sql
     CREATE TABLE users(
       name VARCHAR(20),
@@ -125,7 +127,7 @@ PSQL Shell (psql)
     INSERT INTO users values('Pearl Pearson', 43);
  ```   
 
-Необходимо убедиться в настроке package.json
+2. Необходимо убедиться в настроке package.json
 ```js
      {
        "name": "psql",
@@ -145,7 +147,8 @@ PSQL Shell (psql)
        }
      }
 ```
-Выведем данные на страницу сервера
+Создадим сервер на node-express и создадим запрос "SELECT * FROM users"
+
 ```js
     var express = require('express');
     var pg = require('pg');
@@ -154,13 +157,13 @@ PSQL Shell (psql)
     var connectionString = 'postgres://ilinoa:1234@localhost:5430/todo';
 
     const client = new pg.Client(connectionString);
-
+    
+    //Проверим подлючение к базе данных 
     client.connect(function(error) {
      //callback
      if (!!error) { console.log('Error'+ error.message); }
      else {  console.log('Connected'); } 
     });
-
 
     app.get('/', function(require, response) {
      // about postgresql
