@@ -82,18 +82,30 @@ PSQL Shell (psql)
 Выполните операции установки, используя [UNION](http://www.postgresqltutorial.com/postgresql-union/ "UNION"), [INTERSECT](http://www.postgresqltutorial.com/postgresql-intersect/ "INTERSECT") и [EXCEPT](http://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/  "EXCEPT")
 
 
-    
-    \l                          - список баз данных
-    \dt                         - список всех таблиц
-    \d table                    - структура таблицы table
-    SHOW data_directory;        - узнать текущий путь
-    SELECT * FROM pg_shadow;    - cписок пользователей
-    SELECT * FROM pg_database;  - cписок баз данных
-    \c databaseName             - подключиться к databaseName
-    ALTER DATABASE template1 RENAME TO todo      - переименовать template1 в todo
+
+     \l                          - список баз данных
+     \dt                         - список всех таблиц
+     \d table                    - структура таблицы table
+     \c databaseName             - подключиться к databaseName
+     
+узнать текущий путь: 
+```sql
+    SHOW data_directory;       
+```
+cписок пользователей
+```sql
+    SELECT * FROM pg_shadow;    
+```
+cписок баз данных
+```sql
+SELECT * FROM pg_database;  
+```   
+переименовать template1 в todo
+```sql
+ALTER DATABASE template1 RENAME TO todo      -
+```   
    
-   
-   В качестве проверки подключения базы данных к node-server можно использовать следущую запись
+В качестве проверки подключения базы данных к node-server можно использовать следущую запись
    ```js
       var pgp = require("pg-promise")(/*options*/);
       var db = pgp("postgres://ilinoa:1234@localhost:5432/postgres");
