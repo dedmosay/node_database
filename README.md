@@ -110,7 +110,7 @@ PSQL Shell (psql)
   
   
   Создадим базу данных и добавим данные
-  
+```psql
     CREATE TABLE users(
       name VARCHAR(20),
       age SMALLINT
@@ -123,10 +123,10 @@ PSQL Shell (psql)
     INSERT INTO users values('Marshall Ballard', 35);
     INSERT INTO users values('Joann Riley', 26);
     INSERT INTO users values('Pearl Pearson', 43);
-    
+ ```   
 
 Необходимо убедиться в настроке package.json
-
+```json
      {
        "name": "psql",
        "version": "1.0.0",
@@ -144,8 +144,9 @@ PSQL Shell (psql)
          "server.js": "^1.0.0"
        }
      }
+```
 Выведем данные на страницу сервера
-
+```js
     var express = require('express');
     var pg = require('pg');
     var app = express();
@@ -177,4 +178,4 @@ PSQL Shell (psql)
     });
 
     app.listen(3000);
-  
+ ```
