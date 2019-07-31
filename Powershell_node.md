@@ -5,7 +5,8 @@ Windows
 2. Создать файл profile.ps1
 
 3. Добавить в файл
-$env:Path += ";C:\Program Files\nodejs\"
+
+          $env:Path += ";C:\Program Files\nodejs\"
 
 
 Вы также можете постоянно изменять пользовательские/системные переменные среды 
