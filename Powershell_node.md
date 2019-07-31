@@ -11,16 +11,16 @@ $env:Path += ";C:\Program Files\nodejs\"
 Вы также можете постоянно изменять пользовательские/системные переменные среды 
 (т.е. они будут постоянными при перезапуске оболочки) следующим образом:
 
-### Modify a system environment variable ###
-[Environment]::SetEnvironmentVariable
-     ("Path", $env:Path, [System.EnvironmentVariableTarget]::Machine)
+```ps
+          [Environment]::SetEnvironmentVariable
+               ("Path", $env:Path, [System.EnvironmentVariableTarget]::Machine)
 
-### Modify a user environment variable ###
-[Environment]::SetEnvironmentVariable
-     ("INCLUDE", $env:INCLUDE, [System.EnvironmentVariableTarget]::User)
 
-### Usage from comments - add to the system environment variable ###
-[Environment]::SetEnvironmentVariable(
-    "Path",
-    [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::Machine) + ";C:\bin",
-    [EnvironmentVariableTarget]::Machine)
+          [Environment]::SetEnvironmentVariable
+               ("INCLUDE", $env:INCLUDE, [System.EnvironmentVariableTarget]::User)
+
+          [Environment]::SetEnvironmentVariable(
+              "Path",
+              [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::Machine) + ";C:\bin",
+              [EnvironmentVariableTarget]::Machine)
+```
