@@ -12,7 +12,7 @@ Windows
 Вы также можете постоянно изменять пользовательские/системные переменные среды 
 (т.е. они будут постоянными при перезапуске оболочки) следующим образом:
 
-```ps
+
           [Environment]::SetEnvironmentVariable
                ("Path", $env:Path, [System.EnvironmentVariableTarget]::Machine)
 
@@ -24,4 +24,3 @@ Windows
               "Path",
               [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::Machine) + ";C:\bin",
               [EnvironmentVariableTarget]::Machine)
-```
