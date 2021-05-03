@@ -1,6 +1,17 @@
 
  
+## Обзор MongoDB
 
+
+Запуск MongoDB
+```db
+mongo --host localhost:27017
+```
+
+Создать базу данных `mydatabase`
+```db
+use mydatabase
+```
 ## 1. Введение
 
 Данное руководство построено на примере
