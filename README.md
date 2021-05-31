@@ -1,17 +1,4 @@
 
- 
-## Обзор MongoDB
-
-
-Запуск MongoDB
-```db
-mongo --host localhost:27017
-```
-
-Создать базу данных `mydatabase`
-```db
-use mydatabase
-```
 ## 1. Введение
 
 Данное руководство построено на примере
@@ -207,3 +194,21 @@ ALTER DATABASE template1 RENAME TO todo      -
 
     app.listen(3000);
  ```
+
+
+
+ 
+## Обзор MongoDB
+
+
+Запуск MongoDB
+```db
+mongo --host localhost:27017
+```
+
+Создать базу данных `mydatabase`
+```db
+use mydatabase
+```
+
+Как настроить Mongo читайте здесь - https://medium.com/founding-ithaka/setting-up-and-connecting-to-a-remote-mongodb-database-5df754a4da89
